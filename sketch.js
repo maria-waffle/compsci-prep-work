@@ -54,7 +54,7 @@ function waveMaker() {
             let sw = map(noise(this.xoff, this.yoff), 0 ,1 ,2, 12); // interpolate value to modify stroke thickness that is relative to the return on noise used to map the vertical position of node
             this.size = map(posy, 0, height, 2, 25); // scale element by the interpolation of the vertical canvas position to the element's relative size
 
-            vertex(x+xmod, y);
+            vertex(x + xmod, y);
             
             // attributes that apply to unencapsulated output
             stroke(0, 128, 0, 128);
