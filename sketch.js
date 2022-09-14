@@ -158,7 +158,7 @@ function waveMaker() {
             this.py = random(-this.size * 0.25, this.size * 0.25);
             chance = random();
 
-            if (chance < 0.3) {
+            if (chance < 0.15) {
                 // sunflower
                 stroke(255, 244, 25);
                 for (let i = 0; i < 9; i++) {
@@ -167,7 +167,7 @@ function waveMaker() {
                 }
                 stroke(0, 0, 0);
                 ellipse(this.px, this.py, this.size * 0.000005, this.size * 0.000005);
-            } else if (chance >= 0.3 && chance < 0.6) {
+            } else if (chance >= 0.15 && chance < 0.2) {
                 // daisy
                 stroke(250, 250, 250);
                 for (let i = 0; i < 20; i++) {
@@ -176,7 +176,7 @@ function waveMaker() {
                 }
                 stroke(236, 247, 25);
                 ellipse(this.px, this.py, this.size * 0.000000005, this.size * 0.000000005);
-            } else if (chance >= 0.6 && chance < 0.7) {
+            } else if (chance >= 0.2 && chance < 0.3) {
                 // crape myrtle (thanks ben xox)
                 stroke(173, 43, 126);
                 ellipse(this.px, this.py, this.size * 0.5, this.size * 0.1);
