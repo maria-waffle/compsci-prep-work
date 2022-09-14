@@ -180,7 +180,7 @@ function waveMaker() {
                 // crape myrtle (thanks ben xox)
                 stroke(173, 43, 126);
                 ellipse(this.px, this.py, this.size * 0.5, this.size * 0.1);
-            } else {
+            } else if (chance >= 0.3 && chance < 0.35) {
                 // poppy
                 stroke(232, 21, 21)
                 for (let i = 0; i < 4; i++) {
