@@ -7,8 +7,8 @@ function setup() {
     posy = height * 0.25;
     makeBackground();
 }
-
-function draw() {
+// Draws
+function draw() { 
     posy += 0.75;
     if (posy > height * 1.2) {
         posy = height * 0.25;
@@ -19,7 +19,7 @@ function draw() {
     waver.update();
 }
 
-// generates gradient background
+// Generates gradient background
 function makeBackground() {
     background('#ffffff')
     for(let y = 0; y < height; y++) {
